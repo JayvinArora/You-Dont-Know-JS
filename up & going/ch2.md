@@ -137,6 +137,9 @@ The best and most natural approach is to use arrays for numerically positioned v
 
 #### Functions
 
+//TODO - come back to this
+
+
 The other `object` subtype you'll use all over your JS programs is a function:
 
 ```js
@@ -156,6 +159,10 @@ Again, functions are a subtype of `objects` -- `typeof` returns `"function"`, wh
 **Note:** For more information on JS values and their types, see the first two chapters of the *Types & Grammar* title of this series.
 
 ### Built-In Type Methods
+
+//TODO - come back to this
+
+
 
 The built-in types and subtypes we've just discussed have behaviors exposed as properties and methods that are quite powerful and useful.
 
@@ -238,11 +245,15 @@ Any value that's not on this "falsy" list is "truthy." Here are some examples of
 
 It's important to remember that a non-`boolean` value only follows this "truthy"/"falsy" coercion if it's actually coerced to a `boolean`. It's not all that difficult to confuse yourself with a situation that seems like it's coercing a value to a `boolean` when it's not.
 
+//when woud a value not be coerced to a boolean? TODO
+
 #### Equality
 
 There are four equality operators: `==`, `===`, `!=`, and `!==`. The `!` forms are of course the symmetric "not equal" versions of their counterparts; *non-equality* should not be confused with *inequality*.
 
 The difference between `==` and `===` is usually characterized that `==` checks for value equality and `===` checks for both value and type equality. However, this is inaccurate. The proper way to characterize them is that `==` checks for value equality with coercion allowed, and `===` checks for value equality without allowing coercion; `===` is often called "strict equality" for this reason.
+
+//TODO what is the distinction betweeen checing for both value and type equality vs. checking for value equality and allowing coercion?
 
 Consider the implicit coercion that's allowed by the `==` loose-equality comparison and not allowed with the `===` strict-equality:
 
